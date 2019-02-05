@@ -10,6 +10,12 @@ data class ReportingUnit(
     @SerializedName("Skrot")
     val short: String,
 
+    @SerializedName("Role")
+    val roles: List<Int>,
+
     @SerializedName("Id")
-    val senderId: Int
+    val senderId: Int,
+
+    @SerializedName("NazwaNadawcy")
+    val senderName: String
 )
